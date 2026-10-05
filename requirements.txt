@@ -1,3 +1,7 @@
 torch>=2.0
 numpy
 matplotlib
+transformers>=4.40
+gensim>=4.3
+scikit-learn
+pandas

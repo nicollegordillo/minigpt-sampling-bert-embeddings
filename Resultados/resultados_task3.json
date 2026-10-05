@@ -1,0 +1,348 @@
+{
+  "tokenizacion": [
+    {
+      "id": "banco_1",
+      "palabra": "banco",
+      "significado": "banco: institución financiera",
+      "posiciones": [
+        2
+      ],
+      "subpalabras": "banco",
+      "dim": 768
+    },
+    {
+      "id": "banco_2",
+      "palabra": "banco",
+      "significado": "banco: asiento",
+      "posiciones": [
+        6
+      ],
+      "subpalabras": "banco",
+      "dim": 768
+    },
+    {
+      "id": "banco_3",
+      "palabra": "banco",
+      "significado": "banco: cardumen",
+      "posiciones": [
+        2
+      ],
+      "subpalabras": "banco",
+      "dim": 768
+    },
+    {
+      "id": "copa_1",
+      "palabra": "copa",
+      "significado": "copa: trofeo",
+      "posiciones": [
+        6
+      ],
+      "subpalabras": "copa",
+      "dim": 768
+    },
+    {
+      "id": "copa_2",
+      "palabra": "copa",
+      "significado": "copa: recipiente para beber",
+      "posiciones": [
+        4
+      ],
+      "subpalabras": "copa",
+      "dim": 768
+    },
+    {
+      "id": "vela_1",
+      "palabra": "vela",
+      "significado": "vela: de embarcación",
+      "posiciones": [
+        8
+      ],
+      "subpalabras": "vela",
+      "dim": 768
+    },
+    {
+      "id": "vela_2",
+      "palabra": "vela",
+      "significado": "vela: de cera",
+      "posiciones": [
+        5
+      ],
+      "subpalabras": "vela",
+      "dim": 768
+    }
+  ],
+  "pares": [
+    {
+      "palabra": "banco",
+      "contexto 1": "institución financiera",
+      "contexto 2": "asiento",
+      "par": "banco_1 vs banco_2",
+      "cos BERT": 0.5752637982368469,
+      "cos Word2Vec": 0.9999998807907104,
+      "diferencia (W2V - BERT)": 0.4247360825538635
+    },
+    {
+      "palabra": "banco",
+      "contexto 1": "institución financiera",
+      "contexto 2": "cardumen",
+      "par": "banco_1 vs banco_3",
+      "cos BERT": 0.6602924466133118,
+      "cos Word2Vec": 0.9999998807907104,
+      "diferencia (W2V - BERT)": 0.3397074341773987
+    },
+    {
+      "palabra": "banco",
+      "contexto 1": "asiento",
+      "contexto 2": "cardumen",
+      "par": "banco_2 vs banco_3",
+      "cos BERT": 0.6496497392654419,
+      "cos Word2Vec": 0.9999998807907104,
+      "diferencia (W2V - BERT)": 0.35035014152526855
+    },
+    {
+      "palabra": "copa",
+      "contexto 1": "trofeo",
+      "contexto 2": "recipiente para beber",
+      "par": "copa_1 vs copa_2",
+      "cos BERT": 0.5666619539260864,
+      "cos Word2Vec": 0.9999998807907104,
+      "diferencia (W2V - BERT)": 0.433337926864624
+    },
+    {
+      "palabra": "vela",
+      "contexto 1": "de embarcación",
+      "contexto 2": "de cera",
+      "par": "vela_1 vs vela_2",
+      "cos BERT": 0.799935519695282,
+      "cos Word2Vec": 0.9999999403953552,
+      "diferencia (W2V - BERT)": 0.20006442070007324
+    }
+  ],
+  "matriz_cos": {
+    "labels": [
+      "banco_1",
+      "banco_2",
+      "banco_3",
+      "copa_1",
+      "copa_2",
+      "vela_1",
+      "vela_2"
+    ],
+    "S": [
+      [
+        1.0,
+        0.575264,
+        0.660292,
+        0.323063,
+        0.32954,
+        0.360427,
+        0.354088
+      ],
+      [
+        0.575264,
+        1.0,
+        0.64965,
+        0.351495,
+        0.383457,
+        0.323048,
+        0.342684
+      ],
+      [
+        0.660292,
+        0.64965,
+        1.0,
+        0.352826,
+        0.443069,
+        0.443004,
+        0.439664
+      ],
+      [
+        0.323063,
+        0.351495,
+        0.352826,
+        1.0,
+        0.566662,
+        0.464034,
+        0.425693
+      ],
+      [
+        0.32954,
+        0.383457,
+        0.443069,
+        0.566662,
+        1.0,
+        0.429863,
+        0.493555
+      ],
+      [
+        0.360427,
+        0.323048,
+        0.443004,
+        0.464034,
+        0.429863,
+        1.0,
+        0.799936
+      ],
+      [
+        0.354088,
+        0.342684,
+        0.439664,
+        0.425693,
+        0.493555,
+        0.799936,
+        1.0
+      ]
+    ]
+  },
+  "misma_palabra_media": 0.6503606915473938,
+  "distinta_palabra_media": 0.391219362616539,
+  "distinta_palabra_rango": [
+    0.32304832339286804,
+    0.4935547709465027
+  ],
+  "pca": {
+    "explained_variance_ratio": [
+      0.35021233558654785,
+      0.23540529608726501
+    ],
+    "Z": [
+      [
+        6.744664192199707,
+        -2.0738720893859863
+      ],
+      [
+        7.158895969390869,
+        0.4721679985523224
+      ],
+      [
+        4.991174221038818,
+        -1.2521289587020874
+      ],
+      [
+        -3.2666149139404297,
+        5.426233768463135
+      ],
+      [
+        -3.551300048828125,
+        7.644060134887695
+      ],
+      [
+        -6.087869167327881,
+        -5.4878950119018555
+      ],
+      [
+        -5.988949775695801,
+        -4.7285661697387695
+      ]
+    ]
+  },
+  "w2v_vecinos": {
+    "banco": [
+      [
+        "arriba",
+        0.5211658477783203
+      ],
+      [
+        "forza",
+        0.5175455808639526
+      ],
+      [
+        "deus",
+        0.5097615718841553
+      ],
+      [
+        "apenas",
+        0.5085424184799194
+      ],
+      [
+        "próxima",
+        0.507413923740387
+      ],
+      [
+        "mesi",
+        0.5042635202407837
+      ],
+      [
+        "nostra",
+        0.49788594245910645
+      ],
+      [
+        "nuova",
+        0.4968717098236084
+      ]
+    ],
+    "copa": [
+      [
+        "boca",
+        0.6277621388435364
+      ],
+      [
+        "diez",
+        0.6220709681510925
+      ],
+      [
+        "você",
+        0.6185776591300964
+      ],
+      [
+        "ojos",
+        0.617728590965271
+      ],
+      [
+        "solamente",
+        0.6151297092437744
+      ],
+      [
+        "el_es",
+        0.6114020943641663
+      ],
+      [
+        "fresca",
+        0.6095482707023621
+      ],
+      [
+        "comida",
+        0.6076567769050598
+      ]
+    ],
+    "vela": [
+      [
+        "roberto",
+        0.620782196521759
+      ],
+      [
+        "feliz",
+        0.6085999608039856
+      ],
+      [
+        "eto",
+        0.6037896275520325
+      ],
+      [
+        "tú",
+        0.6008440852165222
+      ],
+      [
+        "clase",
+        0.59661865234375
+      ],
+      [
+        "suerte",
+        0.5942187905311584
+      ],
+      [
+        "quién",
+        0.5918049812316895
+      ],
+      [
+        "eso",
+        0.5902261137962341
+      ]
+    ]
+  },
+  "w2v_rangos": {
+    "banco": 929039,
+    "copa": 1068243,
+    "vela": 894302
+  }
+}
